@@ -71,16 +71,16 @@ footer:
   # the title
   李亦杨的博客:
     # the items after the title, display as links
-    搜索: /search
-    RSS: /atom.xml
-    文章: /archives
-    标签: /tags
-    分类: /categories
-    关于我: /about
+    搜索: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/search
+    RSS: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/atom.xml
+    文章: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/archives
+    标签: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/tags
+    分类: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/categories
+    关于我: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/about
   # the title
   我的博客:
     Docsify: https://pikapikapikaori.github.io/pikapikapi-blog/
-    Hexo: /
+    Hexo: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/
   # the title
   联系方式:
     # items

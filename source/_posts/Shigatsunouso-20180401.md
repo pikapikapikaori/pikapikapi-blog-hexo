@@ -1,7 +1,7 @@
 ---
 title: Shigatsunouso-20180401
 date: 2018-04-01 16:22:06
-cover_image: /covers/Shigatsunouso-20180401.jpg
+cover_image: /pikapikapi-blog-hexo/covers/Shigatsunouso-20180401.jpg
 cover_image_alt: cover
 tags:
     - 动画

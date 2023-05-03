@@ -7,7 +7,7 @@
   
   <title>软件项目实践的一些思索与后期优化方向：设计、开发以及其他 - pikapikapi-blog</title>
   
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/pikapikapi-blog-hexo/favicon.ico">
   
   
     <link rel='manifest' href='/manifest.json'>
@@ -31,47 +31,47 @@
   
 
   
-<link rel="stylesheet" href="/css/var.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/var.css">
 
   
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/main.css">
 
   
-<link rel="stylesheet" href="/css/typography.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/typography.css">
 
   
-<link rel="stylesheet" href="/css/code-highlighting.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/code-highlighting.css">
 
   
-<link rel="stylesheet" href="/css/components.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/components.css">
 
   
-<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/nav.css">
 
   
-<link rel="stylesheet" href="/css/paginator.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/paginator.css">
 
   
-<link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/footer.css">
 
   
-<link rel="stylesheet" href="/css/post-list.css">
-
-  
-  
-<link rel="stylesheet" href="/css/rainbow-banner.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/post-list.css">
 
   
   
-  
-<link rel="stylesheet" href="/css/toc.css">
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/rainbow-banner.css">
 
   
   
   
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/toc.css">
+
   
   
-<link rel="stylesheet" href="/css/post.css">
+  
+  
+  
+<link rel="stylesheet" href="/pikapikapi-blog-hexo/css/post.css">
 
   
   
@@ -90,7 +90,7 @@
         data-rainbow-banner-month="6"
         data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188"
         
-        data-config-root="/"
+        data-config-root="/pikapikapi-blog-hexo/"
         
         data-toc="true"
         data-toc-max-depth="2"
@@ -99,25 +99,25 @@
     >
         <nav id="theme-nav">
     <div class="inner">
-        <a class="title" href="/">李亦杨的博客</a>
+        <a class="title" href="/pikapikapi-blog-hexo/">李亦杨的博客</a>
         <div class="nav-arrow"></div>
         <div class="nav-items">
-            <a class="nav-item nav-item-home" href="/">主页</a>
+            <a class="nav-item nav-item-home" href="/pikapikapi-blog-hexo/">主页</a>
             
             
-            <a class="nav-item" href="/archives">文章</a>
-            
-            
-            
-            <a class="nav-item" href="/tags">标签</a>
+            <a class="nav-item" href="/pikapikapi-blog-hexo/archives">文章</a>
             
             
             
-            <a class="nav-item" href="/categories">分类</a>
+            <a class="nav-item" href="/pikapikapi-blog-hexo/tags">标签</a>
             
             
             
-            <a class="nav-item" href="/about">关于我</a>
+            <a class="nav-item" href="/pikapikapi-blog-hexo/categories">分类</a>
+            
+            
+            
+            <a class="nav-item" href="/pikapikapi-blog-hexo/about">关于我</a>
             
             
             
@@ -125,7 +125,7 @@
             
             
             
-            <a class="nav-item" href="/search">搜索</a>
+            <a class="nav-item" href="/pikapikapi-blog-hexo/search">搜索</a>
             
             
         </div>
@@ -137,7 +137,7 @@
         
         <div class="categories text-uppercase">
         
-            <a href="/categories/技术/">技术</a>
+            <a href="/pikapikapi-blog-hexo/categories/技术/">技术</a>
         
         </div>
         
@@ -240,11 +240,11 @@
 <p>另一方面我也注意到，前端由于没有将方法应用到了页面渲染的各个阶段，从而导致了某些请求会被重复多次执行，这也是影响性能的一大问题。当然，最好的解决方法应是前后端都做一下防抖处理。</p>
 <h1 id="一些其他"><a href="#一些其他" class="headerlink" title="一些其他"></a>一些其他</h1><p>开发上的问题大体如上，基本上都是后续项目中值得进行进一步更改的地方。除此以外，整个项目的生命周期中最最值得被后续继承的地方在于严格的PR-Code Review制度与文档的维护。其中前者保证了代码的质量与规范，后者则提高了有效沟通的效率。这两者才是在开发过程中降低工作量与各类成本的最关键因素。</p>
 <h1 id="名词释义"><a href="#名词释义" class="headerlink" title="名词释义"></a>名词释义</h1><h2 id="RAD"><a href="#RAD" class="headerlink" title="RAD"></a>RAD</h2><p>快速应用开发模型（Rapid Application Development），又称V模型。似乎是为了改进瀑布式模型而在上世纪70至80年代提出的。这一模型大体上遵循下图的几个阶段：</p>
-<p><img src="/2023/04/28/SoftwareDevelopementInsights-20230428/RAD-model.webp" alt="picture"></p>
+<p><img src="/pikapikapi-blog-hexo/2023/04/28/SoftwareDevelopementInsights-20230428/RAD-model.webp" alt="picture"></p>
 <h2 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h2><p>SOA（面向服务架构）的一种变体，提倡将单一应用程序划分为松耦合的服务组，每个服务可独立部署。其概念最早于2005年提出。</p>
-<p><img src="/2023/04/28/SoftwareDevelopementInsights-20230428/microservice.png" alt="picture"></p>
+<p><img src="/pikapikapi-blog-hexo/2023/04/28/SoftwareDevelopementInsights-20230428/microservice.png" alt="picture"></p>
 <h2 id="微前端"><a href="#微前端" class="headerlink" title="微前端"></a>微前端</h2><p>2016年被正式提出，是微服务这一概念被扩展到前端的一种应用形式，便于新老项目的共存与过渡，以及项目独立开发等。</p>
-<p><img src="/2023/04/28/SoftwareDevelopementInsights-20230428/mircro-frontend.png" alt="picture"></p>
+<p><img src="/pikapikapi-blog-hexo/2023/04/28/SoftwareDevelopementInsights-20230428/mircro-frontend.png" alt="picture"></p>
 <h2 id="Java反射机制"><a href="#Java反射机制" class="headerlink" title="Java反射机制"></a><code>Java</code>反射机制</h2><p><code>Java</code>先编译后运行，对象类型在编译期确定。在程序运行时类被动态加载，当类没被用到时没有被加载到JVM，因而利用反射，可以在运行时获得类的各种内容。通过利用反射，可以动态地创建对象，更加灵活，但是会消耗系统资源。</p>
 <h2 id="CQRS"><a href="#CQRS" class="headerlink" title="CQRS"></a>CQRS</h2><p>Command Query Responsibility Segregation，即命令查询职责分离模式，要求一个方法更改对象的状态或返回一个结果，但是不能同时包含这两个行为。从某种角度来说算是继承了从前将系统交互视为CRUD的思想。相较之下，方法链（Method Chaining）语法中由于对象被引用一次即可被多次调用，从某种意义上违反了这一原则。</p>
 <p>更具体的，符合CQRS与<code>.</code>运算符原有语义（<code>调用者.操作名</code>）的写法形如下面的形式：</p>
@@ -276,7 +276,7 @@
         <p class="tags">
             
             <i class="icon"></i>
-            <a href="/tags/开发/" class="tag">#开发</a>
+            <a href="/pikapikapi-blog-hexo/tags/开发/" class="tag">#开发</a>
         </p>
         
     </div>
@@ -284,7 +284,7 @@
 
     <div class="container post-prev-next">
         
-        <a href="/2023/05/04/FLCL-20180922/" class="next">
+        <a href="/pikapikapi-blog-hexo/2023/05/04/FLCL-20180922/" class="next">
             <div>
                 <div class="text">
                     <p class="label">下一篇</p>
@@ -294,7 +294,7 @@
         </a>
         
         
-        <a href="/2020/01/05/10TenBest-20200105/" class="prev">
+        <a href="/pikapikapi-blog-hexo/2020/01/05/10TenBest-20200105/" class="prev">
             <div>
                 <div class="text">
                     <p class="label">上一篇</p>
@@ -375,7 +375,7 @@
 
 
         
-<script src="/js/main.js"></script>
+<script src="/pikapikapi-blog-hexo/js/main.js"></script>
 
         
         

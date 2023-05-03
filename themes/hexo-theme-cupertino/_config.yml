@@ -1,0 +1,103 @@
+# REMEMBER TO EDIT THIS BEFORE DEPLOYING!!!
+
+# the path to your blog's icon:
+favicon: /favicon.ico
+
+# the path to manifest.json
+manifest: /manifest.json
+
+# [Open Graph Protocol](https://ogp.me/)
+og_enabled: true
+og_image: /favicon.ico
+og:
+  # customize og properties here which will replace the defaults
+
+# show excerpt on post list
+show_excerpt: false
+
+# light/dark/auto color scheme
+color_scheme: auto
+
+# show floating color theme toggle
+show_color_scheme_toggle: true
+
+# uppercase categories
+uppercase_categories: true
+
+# capitalize tag names on tags page
+capitalize_tags: false
+
+# add hashtag prefix before tags
+hashtag_prefix_before_tags: true
+
+# rainbow!
+rainbow_banner: true
+rainbow_banner_colors:
+  - '#e50000'
+  - '#ff8d00'
+  - '#ffee00'
+  - '#008121'
+  - '#004cff'
+  - '#760188'
+# choose from [auto, always]
+rainbow_banner_shown: auto
+# Pride Month by default
+rainbow_banner_month: 6
+
+# TOC - table of contents
+toc: true
+toc_max_depth: 2
+
+# scroll reveal (https://scrollrevealjs.org/) - animating elements as they enter/leave the viewport
+scroll_reveal: true
+
+# navigation config
+nav:
+  # the title displays in the upper left corner which won't change
+  title: 李亦杨的博客
+  # the items displays in the upper right corner
+  items:
+    # these items will display as a link
+    文章: /archives
+    标签: /tags
+    分类: /categories
+    关于我: /about
+    # these will be automatically be an icon
+    GitHub: https://github.com/pikapikapikaori
+    搜索: /search
+
+# footer items
+footer:
+  # the title
+  李亦杨的博客:
+    # the items after the title, display as links
+    搜索: /search
+    RSS: /atom.xml
+    文章: /archives
+    标签: /tags
+    分类: /categories
+    关于我: /about
+  # the title
+  我的博客:
+    Docsify: https://pikapikapikaori.github.io/pikapikapi-blog/?#/
+    Hexo: /
+  # the title
+  联系方式:
+    # items
+    GitHub: https://github.com/pikapikapikaori
+    Email: mailto:Lyy8759@outlook.com
+
+# footer extra description
+# footer_extra_description: something will be shown at the bottom of the footer
+
+# the license your posts under
+license: GPL-3.0
+# the link of your license
+license_link: https://github.com/pikapikapikaori/pikapikapi-blog-hexo/blob/master/LICENSE
+
+# search
+# based on [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
+search: true
+search_path: search.json
+
+# REMEMBER TO EDIT THIS BEFORE DEPLOYING!!!

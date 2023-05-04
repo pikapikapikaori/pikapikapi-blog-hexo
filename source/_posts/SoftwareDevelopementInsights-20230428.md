@@ -47,51 +47,7 @@ categories:
 
 由于项目较为庞大因而一些细节的设计我也没有来得及能够去亲自把控，而是交给了同组的其他人。在这里就出了问题。上文所述的测试管理中，题库中的问题需要记录与其相关的问题类别（属于哪种病）、问题类型（单选多选）、问题内容等等。针对此负责这块内容的组员A给出了这样的设计：
 
-```mermaid
-erDiagram
-Exam {
-int exam_id PK
-string exam_name
-}
-
-Paper {
-int paper_id PK
-string paper_name
-int exam_id FK
-string duration
-string total_score
-}
-
-Question {
-int question_id PK
-string question_content
-string question_type
-int category_id FK
-}
-
-Category {
-int category_id PK
-string category_name
-}
-
-ExamSession {
-int session_id PK
-int paper_id FK
-time start_time
-time end_time
-}
-
-StudentResult {
-int result_id PK
-int session_id FK
-int student_id
-int score
-}
-Exam ||--|| Paper : relate
-Paper ||--|| ExamSession : relate
-Question }o--|| Category : contains
-ExamSession ||--o{ StudentResult : relate
-```
+![er diagram](/mermaid-1.png)
 
 且不谈同学A遗漏了需要对每张卷子上包含的题目、以及每位学生在试卷上答题所做出的回答进行存储的功能，单看`Question`与`Category`两张表。乍一看虽然是挺合理的设计，然而后者的实际有效字段只有`category_name`一栏。我不否认在大型项目中这样设计的合理性，但是考虑到这个项目的规模、以及后续可能会进行的功能上的拓展，我个人看来`Category`这张表完全冗余的。
 
@@ -109,58 +65,11 @@ ExamSession ||--o{ StudentResult : relate
 
 更具体的，微服务给实践中的开发带来了巨大的便捷性。我在项目中大概采取了下图的架构：
 
-```mermaid
-flowchart LR
-    subgraph backend
-        subgraph modules
-            direction TB
-            subgraph module 1
-                direction LR
-                entity1 --> dao1 --> service1 --> controller1
-            end
-            subgraph module 2
-                direction LR
-                entity2 --> dao2 --> service2 --> controller2
-            end
-            subgraph module 3
-                direction LR
-                entity3 --> dao3 --> service3 --> controller3
-            end
-            subgraph module 4
-                direction LR
-                entity4 --> dao4 --> service4 --> controller4
-            end
-        end
-        subgraph intermediator
-            direction LR
-            servicei --> controlleri
-        end
-
-        controller1 --> servicei
-        controller2 --> servicei
-        controller3 --> servicei
-        controller4 --> servicei
-    end
-
-    subgraph database
-        databse1 --> entity1
-        databse2 --> entity2
-        databse3 --> entity3
-        databse4 --> entity4
-    end
-
-    controlleri --> frontend
-```
+![architecture](/mermaid-2.png)
 
 作为微服务而言其实也是非常常见与合理的架构。中间层充当网关的角色被外部服务（前端）统一调用，其内部则再根据具体的调用请求来选择合适的服务进行通信，并将数据进行处理后转发给外部服务。在实践中，前端组与后端组同时开发，需求细节与开发细节还不明了的情况下，接口的内容与种类尽管可以大体确定，但具体的数据内容与种类等都是难以确定的。因而，利用中间层也即网关这一角色，接口确定的难题得以被解决。前后端可以先按照自己的想法对接口进行设计与模拟，当有一定的进度、对接口需求更加明确时再利用中间层进行数据的整合与处理，从而节约了大量沟通与修改的时间。
 
-```mermaid
-sequenceDiagram
-    Frontend->>+Intermediator: Request
-    Intermediator->>+Module: Processed Request
-    Module-->>-Intermediator: Response
-    Intermediator-->>-Frontend: Processed Response
-```
+![sequence diagram](/mermaid-3.png)
 
 实践上，数据的转发与整合可以由后端的网关接管，也可以由前端利用nodejs来开发，无论哪种都是非常灵活的。事实上，nodejs构建的中间层或称node层的出现，就是为了让前后端都更关注于业务本身。尽管层数的增加可能会给性能带来一些影响，然而这与开发效率所节省的成本相比是微乎其微的。由过去后端渲染html发送给浏览器的前后端不分离，到前后端分离开发再到中间层的进化，我想这是一个相当自然的过程，也非常值得去学习与应用。
 
@@ -493,13 +402,7 @@ public JSONObject updateDataById(
 
 我个人而言也作为开发人员参与到了前端组的开发中。事实上最大的优化点在于接口调用的时机。当前，前端组在页面渲染时会请求一次后端接口，获取全部数据并渲染到页面上。之后，在进行关键词查找、数据插入、数据删除时各自会调用一次接口。至此为止都是比较合理的，当数据量庞大时前端不应该负责数据的查找工作，利用在服务器侧进行过优化的查询接口比较合理。然而，前端在进行数据编辑时，则是采用下面的流程：
 
-```mermaid
-flowchart TD
-    A[页面选中数据] --> B[获取数据id]
-    B --> C[根据id再次调用后端接口获取全部数据]
-    C --> D[根据后端返回渲染页面]
-    D --> E[用户输入完成后再次调取后端更新数据接口]
-```
+![sequence](/mermaid-4.png)
 
 由于在包含全部数据的页面进行初期渲染时每条数据的全部内容前端都已经获取到，因而选中数据进入编辑页面时完全可以直接利用前端已经拿到的数据进行渲染，不需要再次调用后端端口。且不谈在网络延迟较高的情况下，上面的做法会使得用户体验较差，在服务器有大量请求的情况下，前端冗余的调用会加重服务器的负担，从而影响性能。
 

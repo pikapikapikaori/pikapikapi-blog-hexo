@@ -58,13 +58,13 @@ nav:
   # the items displays in the upper right corner
   items:
     # these items will display as a link
-    文章: /archives
+    存档: /archives
     标签: /tags
     分类: /categories
     关于我: /about
     # these will be automatically be an icon
     GitHub: https://github.com/pikapikapikaori
-    搜索: /search
+    Search: /search
 
 # footer items
 footer:
@@ -73,7 +73,7 @@ footer:
     # the items after the title, display as links
     搜索: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/search
     RSS: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/atom.xml
-    文章: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/archives
+    存档: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/archives
     标签: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/tags
     分类: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/categories
     关于我: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/about

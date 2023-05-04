@@ -1,6 +1,6 @@
-# pikapikapi-blog
+# pikapikapi-blog-hexo
 
-![license](https://img.shields.io/github/license/pikapikapikaori/pikapikapi-blog) ![rss build](https://img.shields.io/github/actions/workflow/status/pikapikapikaori/pikapikapi-blog/rss.yml?label=rss%20build) ![last updated](https://img.shields.io/github/last-commit/pikapikapikaori/pikapikapi-blog?label=last%20updated)
+![license](https://img.shields.io/github/license/pikapikapikaori/pikapikapi-blog-hexo) ![build](https://img.shields.io/github/actions/workflow/status/pikapikapikaori/pikapikapi-blog-hexo/blog-builder.yml?label=build) ![last updated](https://img.shields.io/github/last-commit/pikapikapikaori/pikapikapi-blog-hexo?label=last%20updated)
 
 个人博客项目
 

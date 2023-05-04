@@ -5,6 +5,7 @@ cover_image: /pikapikapi-blog-hexo/covers/Shigatsunouso-20180401.jpg
 cover_image_alt: cover
 tags:
     - 动画
+    - 中文
 categories:
     - 随笔
 ---

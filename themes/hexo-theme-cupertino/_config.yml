@@ -61,6 +61,7 @@ nav:
     Archives: /archives
     Tags: /tags
     Categories: /categories
+    Projects: /projects
     About: /about
     # these will be automatically be an icon
     GitHub: https://github.com/pikapikapikaori
@@ -74,6 +75,7 @@ footer:
     Archives: /pikapikapi-blog-hexo/archives
     Tags: /pikapikapi-blog-hexo/tags
     Categories: /pikapikapi-blog-hexo/categories
+    Projects: /pikapikapi-blog-hexo/projects
     About: /pikapikapi-blog-hexo/about
     Search: /pikapikapi-blog-hexo/search
     RSS: /pikapikapi-blog-hexo/atom.xml

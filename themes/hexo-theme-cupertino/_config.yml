@@ -71,16 +71,16 @@ footer:
   # the title
   Pikapikapi Blog:
     # the items after the title, display as links
-    Archives: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/archives
-    Tags: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/tags
-    Categories: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/categories
-    About: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/about
-    Search: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/search
-    RSS: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/atom.xml
+    Archives: /pikapikapi-blog-hexo/archives
+    Tags: /pikapikapi-blog-hexo/tags
+    Categories: /pikapikapi-blog-hexo/categories
+    About: /pikapikapi-blog-hexo/about
+    Search: /pikapikapi-blog-hexo/search
+    RSS: /pikapikapi-blog-hexo/atom.xml
   # the title
   Blogs:
-    Docsify: https://pikapikapikaori.github.io/pikapikapi-blog/
-    Hexo: https://pikapikapikaori.github.io/pikapikapi-blog-hexo/
+    Main Site: https://pikapikapikaori.github.io/pikapikapi-blog/
+    Sub-site: /pikapikapi-blog-hexo/
   # the title
   Contact:
     # items

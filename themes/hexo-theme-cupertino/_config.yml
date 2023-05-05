@@ -82,6 +82,7 @@ footer:
   # the title
   Blogs:
     Main Site: https://pikapikapikaori.github.io/pikapikapi-blog/
+    Standby Site: https://pikapikapi-blog.vercel.app/
     Sub-site: /pikapikapi-blog-hexo/
   # the title
   Contact:

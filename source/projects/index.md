@@ -1,5 +1,5 @@
 ---
-title: projects
+title: Projects
 no_date: true
 ---
 

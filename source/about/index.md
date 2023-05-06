@@ -17,7 +17,7 @@ no_comments: true
 
 [本博客](https://pikapikapikaori.github.io/pikapikapi-blog-hexo/)为主站点的分站点，基于[Hexo](https://hexo.io/)搭建。
 
-[主站点](https://pikapikapikaori.github.io/pikapikapi-blog/)基于[Docsify](https://docsify.js.org/#/)搭建，部署在Github Pages上。您也可以访问部署在Vercel上的[备用站](https://pikapikapi-blog.vercel.app)。
+[主站点](https://pikapikapikaori.github.io/pikapikapi-blog/)基于[Docsify](https://docsify.js.org/#/)搭建，部署在GitHub Pages上。您也可以访问部署在Vercel上的[备用站](https://pikapikapi-blog.vercel.app)。
 
 # 日本語
 
@@ -35,7 +35,7 @@ no_comments: true
 
 [このブログ](https://pikapikapikaori.github.io/pikapikapi-blog-hexo/)は私のブログのサブサイトであり、[Hexo](https://hexo.io/)を利用しています。
 
-私のブログの[メインサイト](https://pikapikapikaori.github.io/pikapikapi-blog/#/jp/)は[Docsify](https://docsify.js.org/#/)を利用しており、Github Pagesにデプロイされました。また、Vercelにデプロイされた[スタンバイサイト](https://pikapikapi-blog.vercel.app/#/jp/)にアクセスすることもできます。
+私のブログの[メインサイト](https://pikapikapikaori.github.io/pikapikapi-blog/#/jp/)は[Docsify](https://docsify.js.org/#/)を利用しており、GitHub Pagesにデプロイされました。また、Vercelにデプロイされた[スタンバイサイト](https://pikapikapi-blog.vercel.app/#/jp/)にアクセスすることもできます。
 
 # English
 
@@ -58,4 +58,4 @@ Welcome to my blog. I am currently studying to become a good full-stack engineer
 
 [This blog](https://pikapikapikaori.github.io/pikapikapi-blog-hexo/) is powered by [Hexo](https://hexo.io/) and is a sub-site of my blog.
 
-The [main site](https://pikapikapikaori.github.io/pikapikapi-blog/#/en-us/) of my blog is powered by [Docsify](https://docsify.js.org/#/), and is deployed on Github Pages. You can also visit the [standby site](https://pikapikapi-blog.vercel.app/#/en-us/) which is deployed on Vercel.
+The [main site](https://pikapikapikaori.github.io/pikapikapi-blog/#/en-us/) of my blog is powered by [Docsify](https://docsify.js.org/#/), and is deployed on GitHub Pages. You can also visit the [standby site](https://pikapikapi-blog.vercel.app/#/en-us/) which is deployed on Vercel.

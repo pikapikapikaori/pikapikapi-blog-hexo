@@ -173,18 +173,18 @@
 <h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><p>感悟最深的大概就是css的使用了。说实话一直以来我其实在服务端做的东西比较多，前端基本上就是用用组件库应付应付课设，也不会特别关注美观度啊动画啊之类的东西。写博客为了想要点好看的东西不得不好好看看css写法，发现原来css还能玩的这么花里胡哨。比如在我博客的<a href="/writings/BriefComments">随笔下的短评部分</a>，我想要以年为单位记录短评，每个年份类似一个details标签的行为，但是默认的details标签样式实在太丑了，我也不想为了这么个简单的小功能写一大段js挂在到<code>index.html</code>，看了看stackoverflow上发现可以用伪元素来写：</p>
 <p>当然这里用了<code>@media</code>来做响应式，这也是以前很少考虑的一点。一方面基本上不会怎么去做不同分辨率屏幕的适配，一方面就算做基本上也就是用个ElementUI的布局就算完事了。现在想想感觉其实是有点太依赖组件库了，不是一个很好的事。最近想试试用Swift写Web后端的时候第一反应也是看看Vapor怎么用，感觉确实是有点太思维定势了：后端用框架、前端用框架加组件库。工程上说挺合理的，节约成本。不过自己开发的时候一来是高度定制化的需求很难满足，二来确实会少很多乐趣。</p>
 <p>
-    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/b9Lu37v6/embedded/html,css,result/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/b9Lu37v6/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" style="border-radius: 7px"></iframe>
 </p>
 
 <p>说回css，这个伪元素确实是个很好用的东西。同样是这个界面，我想在标题之间加个分割线，希望这个分割线是中间有个小星星，然后左右有两条短线；而在短评内部最下方日期上希望有个动态的吃豆人分割线。同样是利用了伪元素就可以很简单的实现：</p>
 <p>这里<code>animation</code>和<code>@keyframe</code>也是css 3新特性，可以很方便的去做动画效果。</p>
 <p>
-    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/pyb42tus/10/embedded/html,css,result/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/pyb42tus/10/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" style="border-radius: 7px"></iframe>
 </p>
 
 <p>当然也可以利用<code>transform</code>这个新特性来做动画效果。这个博客上右侧的小组件显示隐藏逻辑就是这么做的：</p>
 <p>
-    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/ft3kares/28/embedded/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/ft3kares/28/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" style="border-radius: 7px"></iframe>
 </p>
 
 <h1 id="js"><a href="#js" class="headerlink" title="js"></a>js</h1><p>另外js上碰到的最大的麻烦是想做个查看大图的功能，看了看stackoverflow上比较高的做法是做一个宽<code>100vw</code>高<code>100vh</code>的整体span，点击图片把span的<code>display</code>设成<code>block</code>，再点span设成<code>none</code>，不过那个版本太粗糙还有很多问题，比如我要放按钮的话子元素点击也会触发父元素的。今天重构了一下大概变成现在的样子：</p>
@@ -192,7 +192,7 @@
 <p>js逻辑里拿元素根据类名做filter的步骤感觉可以用<code>querySelectorAll</code>来简化一下。</p>
 <p>另外也用<code>backdrop-filter</code>和<code>-webkit-backdrop-filter</code>做了个毛玻璃的背景效果，更好看些。</p>
 <p>
-    <iframe width="100%" height="300" src="//jsfiddle.net/pikapikapi/fkt849L2/15/embedded/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <iframe width="100%" height="300" src="//jsfiddle.net/pikapikapi/fkt849L2/15/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" style="border-radius: 7px"></iframe>
 </p>
 
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol>

@@ -42,7 +42,7 @@ categories:
 当然这里用了`@media`来做响应式，这也是以前很少考虑的一点。一方面基本上不会怎么去做不同分辨率屏幕的适配，一方面就算做基本上也就是用个ElementUI的布局就算完事了。现在想想感觉其实是有点太依赖组件库了，不是一个很好的事。最近想试试用Swift写Web后端的时候第一反应也是看看Vapor怎么用，感觉确实是有点太思维定势了：后端用框架、前端用框架加组件库。工程上说挺合理的，节约成本。不过自己开发的时候一来是高度定制化的需求很难满足，二来确实会少很多乐趣。
 
 <p>
-    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/b9Lu37v6/embedded/html,css,result/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/b9Lu37v6/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" style="border-radius: 7px"></iframe>
 </p>
 
 说回css，这个伪元素确实是个很好用的东西。同样是这个界面，我想在标题之间加个分割线，希望这个分割线是中间有个小星星，然后左右有两条短线；而在短评内部最下方日期上希望有个动态的吃豆人分割线。同样是利用了伪元素就可以很简单的实现：
@@ -50,13 +50,13 @@ categories:
 这里`animation`和`@keyframe`也是css 3新特性，可以很方便的去做动画效果。
 
 <p>
-    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/pyb42tus/10/embedded/html,css,result/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/pyb42tus/10/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" style="border-radius: 7px"></iframe>
 </p>
 
 当然也可以利用`transform`这个新特性来做动画效果。这个博客上右侧的小组件显示隐藏逻辑就是这么做的：
 
 <p>
-    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/ft3kares/28/embedded/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/ft3kares/28/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" style="border-radius: 7px"></iframe>
 </p>
 
 # js
@@ -70,7 +70,7 @@ js逻辑里拿元素根据类名做filter的步骤感觉可以用`querySelectorA
 另外也用`backdrop-filter`和`-webkit-backdrop-filter`做了个毛玻璃的背景效果，更好看些。
 
 <p>
-    <iframe width="100%" height="300" src="//jsfiddle.net/pikapikapi/fkt849L2/15/embedded/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <iframe width="100%" height="300" src="//jsfiddle.net/pikapikapi/fkt849L2/15/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" style="border-radius: 7px"></iframe>
 </p>
 
 # 参考资料

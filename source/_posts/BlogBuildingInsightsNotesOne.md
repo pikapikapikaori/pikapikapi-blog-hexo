@@ -37,41 +37,29 @@ categories:
 
 # CSS
 
-<!-- panels:start -->
-<!-- div:left-panel -->
-
 感悟最深的大概就是css的使用了。说实话一直以来我其实在服务端做的东西比较多，前端基本上就是用用组件库应付应付课设，也不会特别关注美观度啊动画啊之类的东西。写博客为了想要点好看的东西不得不好好看看css写法，发现原来css还能玩的这么花里胡哨。比如在我博客的[随笔下的短评部分](/writings/BriefComments)，我想要以年为单位记录短评，每个年份类似一个details标签的行为，但是默认的details标签样式实在太丑了，我也不想为了这么个简单的小功能写一大段js挂在到`index.html`，看了看stackoverflow上发现可以用伪元素来写：
 
 当然这里用了`@media`来做响应式，这也是以前很少考虑的一点。一方面基本上不会怎么去做不同分辨率屏幕的适配，一方面就算做基本上也就是用个ElementUI的布局就算完事了。现在想想感觉其实是有点太依赖组件库了，不是一个很好的事。最近想试试用Swift写Web后端的时候第一反应也是看看Vapor怎么用，感觉确实是有点太思维定势了：后端用框架、前端用框架加组件库。工程上说挺合理的，节约成本。不过自己开发的时候一来是高度定制化的需求很难满足，二来确实会少很多乐趣。
 
-<!-- div:right-panel -->
-
-<iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/b9Lu37v6/embedded/html,css,result/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<!-- div:left-panel -->
+<p>
+    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/b9Lu37v6/embedded/html,css,result/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</p>
 
 说回css，这个伪元素确实是个很好用的东西。同样是这个界面，我想在标题之间加个分割线，希望这个分割线是中间有个小星星，然后左右有两条短线；而在短评内部最下方日期上希望有个动态的吃豆人分割线。同样是利用了伪元素就可以很简单的实现：
 
 这里`animation`和`@keyframe`也是css 3新特性，可以很方便的去做动画效果。
 
-<!-- div:right-panel -->
-
-<iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/pyb42tus/10/embedded/html,css,result/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<!-- div:left-panel -->
+<p>
+    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/pyb42tus/10/embedded/html,css,result/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</p>
 
 当然也可以利用`transform`这个新特性来做动画效果。这个博客上右侧的小组件显示隐藏逻辑就是这么做的：
 
-<!-- div:right-panel -->
-
-<iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/ft3kares/28/embedded/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<!-- panels:end -->
+<p>
+    <iframe width="100%" height="300px" src="//jsfiddle.net/pikapikapi/ft3kares/28/embedded/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</p>
 
 # js
-
-<!-- panels:start -->
-<!-- div:left-panel -->
 
 另外js上碰到的最大的麻烦是想做个查看大图的功能，看了看stackoverflow上比较高的做法是做一个宽`100vw`高`100vh`的整体span，点击图片把span的`display`设成`block`，再点span设成`none`，不过那个版本太粗糙还有很多问题，比如我要放按钮的话子元素点击也会触发父元素的。今天重构了一下大概变成现在的样子：
 
@@ -81,11 +69,9 @@ js逻辑里拿元素根据类名做filter的步骤感觉可以用`querySelectorA
 
 另外也用`backdrop-filter`和`-webkit-backdrop-filter`做了个毛玻璃的背景效果，更好看些。
 
-<!-- div:right-panel -->
-
-<iframe width="100%" height="300" src="//jsfiddle.net/pikapikapi/fkt849L2/15/embedded/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<!-- panels:end -->
+<p>
+    <iframe width="100%" height="300" src="//jsfiddle.net/pikapikapi/fkt849L2/15/embedded/?fontColor=c6a2eb&accentColor=c6a2eb" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</p>
 
 # 参考资料
 

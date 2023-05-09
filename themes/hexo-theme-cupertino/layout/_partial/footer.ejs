@@ -5,7 +5,7 @@
             <div class="group">
                 <h2 class="title"><%= i %></h2>
                 <% for (const n in theme.footer[i]) { %>
-                <a href="<%- theme.footer[i][n] %>" class="item"><%= n %></a>
+                <a href="<%- url_for(theme.footer[i][n]) %>" class="item"><%= n %></a>
                 <% } %>
             </div>
             <% } %>

@@ -72,18 +72,18 @@ footer:
   # the title
   Pikapikapi Blog:
     # the items after the title, display as links
-    Archives: /pikapikapi-blog-hexo/archives
-    Tags: /pikapikapi-blog-hexo/tags
-    Categories: /pikapikapi-blog-hexo/categories
-    Projects: /pikapikapi-blog-hexo/projects
-    About: /pikapikapi-blog-hexo/about
-    Search: /pikapikapi-blog-hexo/search
-    RSS: /pikapikapi-blog-hexo/atom.xml
+    Archives: /archives
+    Tags: /tags
+    Categories: /categories
+    Projects: /projects
+    About: /about
+    Search: /search
+    RSS: /atom.xml
   # the title
   Blogs:
     Main Site: https://pikapikapikaori.github.io/pikapikapi-blog/
     Standby Site: https://pikapikapi-blog.vercel.app/
-    Sub-site: /pikapikapi-blog-hexo/
+    Sub-site: /
   # the title
   Contact:
     # items

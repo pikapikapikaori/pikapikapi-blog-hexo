@@ -458,10 +458,10 @@
 <p>当然根据具体协议封装方式不同其结构也有所不同，但基本上都会含有上面的部分。从上面也可以看出，IPSec包含了这些协议：AH、ESP和ISAKMP。</p>
 <p>IPSec通常有两种传输模式，即隧道模式和传输模式。工作方式见名知意。</p>
 <p><img src="/pikapikapi-blog-hexo/2023/05/27/IPSecKnowledge-20230527/picture-1.svg.png" alt="picture"></p>
-<h2 id="L2TP-x2F-IPSec"><a href="#L2TP-x2F-IPSec" class="headerlink" title="L2TP &#x2F; IPSec"></a>L2TP &#x2F; IPSec</h2><p>L2TP工作在第二层数据链路层，使用端口UDP1701。某种意义上可以理解成是把PPP载荷包了一层UDP。由于IPSec更多侧重于对数据报文的加密也就是安全性，在用户认证上比较薄弱。因而常会考虑将L2TP和IPSec结合。</p>
+<h2 id="L2TP-IPSec"><a href="#L2TP-IPSec" class="headerlink" title="L2TP &#x2F; IPSec"></a>L2TP &#x2F; IPSec</h2><p>L2TP工作在第二层数据链路层，使用端口UDP1701。某种意义上可以理解成是把PPP载荷包了一层UDP。由于IPSec更多侧重于对数据报文的加密也就是安全性，在用户认证上比较薄弱。因而常会考虑将L2TP和IPSec结合。</p>
 <p>仔细想一下，当家里路由器桥接光猫，路由器拨号的时候，光猫只作Modem，路由器通过PPPoE方式拨号，这里PPPoE实质上就是封装了PPP协议。大概是由于PPP擅于进行身份认证和IP分配，所以大量采用PPPoE方式来接入宽带。</p>
 <p>总之由于L2TP可以很方便地做多用户的认证，可以很好地解决IPSec在这方面的缺陷，所以两者经常被组合使用。</p>
-<h2 id="Cisco-IPSec-IPSec-x2F-IKE"><a href="#Cisco-IPSec-IPSec-x2F-IKE" class="headerlink" title="Cisco IPSec (IPSec &#x2F; IKE)"></a>Cisco IPSec (IPSec &#x2F; IKE)</h2><p>Cisco的IPSec大体上是结合使用了IKE协议，当然也有在此之上再利用L2TP协议的，不过华硕和MacOS似乎都没有支持？因而这里不作探讨。</p>
+<h2 id="Cisco-IPSec-IPSec-IKE"><a href="#Cisco-IPSec-IPSec-IKE" class="headerlink" title="Cisco IPSec (IPSec &#x2F; IKE)"></a>Cisco IPSec (IPSec &#x2F; IKE)</h2><p>Cisco的IPSec大体上是结合使用了IKE协议，当然也有在此之上再利用L2TP协议的，不过华硕和MacOS似乎都没有支持？因而这里不作探讨。</p>
 <p>先说IKE协议，全程即网络密钥交换协议，基本上是用下列方式进行身份认证和密钥分发的：</p>
 <ul>
 <li>身份认证，支持PSK、RSA、数字信封</li>
@@ -583,7 +583,7 @@
             </div>
             
         </div>
-        <span>&copy; 2023 - 2023 李亦杨 / リエキヨウ / Jeff Li - All Rights Reserved. </span>
+        <span>&copy; 2023 - 2024 李亦杨 / リエキヨウ / Jeff Li - All Rights Reserved. </span>
         
         
             <br>

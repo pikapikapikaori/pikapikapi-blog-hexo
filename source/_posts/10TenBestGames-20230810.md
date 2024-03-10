@@ -8,6 +8,7 @@ tags:
     - 中文
 categories:
     - 随笔
+    - 年选
 ---
 
 ![Cover](cover-picture.JPG)

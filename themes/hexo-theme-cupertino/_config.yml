@@ -96,9 +96,9 @@ footer:
 # footer_extra_description: something will be shown at the bottom of the footer
 
 # the license your posts under
-license: GPL-3.0
+license: 
 # the link of your license
-license_link: https://github.com/pikapikapikaori/pikapikapi-blog-hexo/blob/master/LICENSE
+license_link: 
 
 # search
 # based on [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)

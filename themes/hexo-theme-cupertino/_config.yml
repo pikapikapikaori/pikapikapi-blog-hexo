@@ -54,36 +54,30 @@ scroll_reveal: true
 # navigation config
 nav:
   # the title displays in the upper left corner which won't change
-  title: Pikapikapi Blog
+  title: ピカピカピ
   # the items displays in the upper right corner
   items:
     # these items will display as a link
     Archives: /archives
-    Tags: /tags
     Categories: /categories
-    Projects: /projects
     About: /about
     # these will be automatically be an icon
-    GitHub: https://github.com/pikapikapikaori
     Search: /search
 
 # footer items
 footer:
   # the title
-  Pikapikapi Blog:
+  ピカピカピ:
     # the items after the title, display as links
     Archives: /archives
-    Tags: /tags
     Categories: /categories
-    Projects: /projects
     About: /about
     Search: /search
     RSS: /atom.xml
   # the title
   Blogs:
-    Main Site: https://pikapikapikaori.github.io/pikapikapi-blog/
+    Homepage: https://pikapikapikaori.github.io/pikapikapi-blog/pages/homepage/index.html
     Standby Site: https://pikapikapi-blog.vercel.app/
-    Sub-site: /
   # the title
   Contact:
     # items

@@ -4,10 +4,10 @@
 
 # Site
 title: ピカピカピ
-subtitle: 李亦杨 / リエキヨウ / Jeff Li
+subtitle: 李亦杨 / 李亦楊 / Jeff Li
 description: Don't worry, be happy.
 keywords: Pikapikapi
-author: 李亦杨 / リエキヨウ / Jeff Li
+author: 李亦杨 / 李亦楊 / Jeff Li
 language: en
 timezone: 'Asia/Shanghai'
 
@@ -104,7 +104,10 @@ ignore:
 theme: hexo-theme-cupertino
 
 plugins:
-    hexo-generator-feed
+    - hexo-generator-feed
+    - hexo-asset-image
+    - hexo-prism-plugin
+    - hexo-toc
 
 #Feed Atom
 feed:

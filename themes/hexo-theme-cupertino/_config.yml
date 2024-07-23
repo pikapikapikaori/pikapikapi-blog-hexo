@@ -31,7 +31,7 @@ capitalize_tags: false
 hashtag_prefix_before_tags: true
 
 # rainbow!
-rainbow_banner: true
+rainbow_banner: false
 rainbow_banner_colors:
   - '#e50000'
   - '#ff8d00'
